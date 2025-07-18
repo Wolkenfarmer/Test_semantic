@@ -23,4 +23,6 @@ jobs:
       - name: Install semantics
         run: go install github.com/stevenmatthewt/semantics@latest
       - name: Create Git Tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: $HOME/go/bin/semantics
