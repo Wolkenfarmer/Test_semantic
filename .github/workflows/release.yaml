@@ -24,7 +24,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required for permission to tag the repo
           DEFAULT_BUMP: none # Which type of bump to use when none explicitly provided (default: minor)
           DRY_RUN: false # Determine the next version without tagging the branch. The workflow can use the outputs new_tag and tag in subsequent steps. Possible values are true and false (default)
-          GIT_API_TAGGING: true # Set if using git cli or git api calls for tag push operations
           TAG_CONTEXT: branch # Set the context of the previous tag. Possible values are repo (default) or branch
           TAG_PREFIX: v # Prefix to add to the tag. eg v to create v0.0.0. This takes precidance over WITH_V
           MAJOR_STRING_TOKEN: major
