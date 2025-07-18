@@ -1,0 +1,26 @@
+name: Release
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+
+jobs:
+  annotate:
+    name: Annotate Commit as Release
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # needs entire commit history for tags
+          sparse-checkout: '' # no need to check files
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: 1.16
+      - name: Install semantics
+        run: go install github.com/stevenmatthewt/semantics@latest
+      - name: Create Git Tag
+        run: $HOME/go/bin/semantics
