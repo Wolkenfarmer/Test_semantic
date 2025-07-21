@@ -21,8 +21,8 @@ jobs:
         uses: cycjimmy/semantic-release-action@v4
         with:
           dry_run: true # set to true for testing
+          # allows e.g. exclamation marks after type to trigger major releases
           extra_plugins: |
-            # allows e.g. exclamation marks after type to trigger major releases
             conventional-changelog-conventionalcommits
         env: # check releaserc.json for further configuration
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required for permission to tag the repo
