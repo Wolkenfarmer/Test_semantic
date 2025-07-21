@@ -11,3 +11,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Schroedinger's Cat
         run: echo "The cat is both alive and dead until you check it."
+      - name: Fail step
+        run: exit 1
