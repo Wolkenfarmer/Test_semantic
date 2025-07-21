@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          sparse-checkout: './github/.releaserc.yaml' # no need to check other files
+          sparse-checkout: '.github/.releaserc.yaml' # no need to check other files
       - name: Move .releaserc.yaml to root
         run: mv .github/.releaserc.yaml .releaserc.yaml
       - name: Semantic Release
