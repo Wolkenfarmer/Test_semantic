@@ -23,4 +23,3 @@ jobs:
         env: # check releaserc.json for further configuration
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required for permission to tag the repo
           dry_run: true
-
