@@ -25,6 +25,6 @@ jobs:
           extends: .github/.releaserc.yaml
           # allows e.g. exclamation marks after type to trigger major releases
           extra_plugins: conventional-changelog-conventionalcommits
-          working_directory: ./code
+          working_directory: ./github
         env: # check releaserc.json for further configuration
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required for permission to tag the repo
