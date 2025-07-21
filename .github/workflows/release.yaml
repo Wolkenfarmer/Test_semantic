@@ -20,7 +20,7 @@ jobs:
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
         with:
-          dry_run: true # set to true for testing
+          dry_run: false # set to true for testing
           # allows e.g. exclamation marks after type to trigger major releases
           extra_plugins: |
             conventional-changelog-conventionalcommits
