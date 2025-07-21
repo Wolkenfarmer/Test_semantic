@@ -22,6 +22,7 @@ jobs:
         uses: cycjimmy/semantic-release-action@v4
         with:
           dry_run: false # set to true for testing
+          extends: .github/.releaserc.yaml
           # allows e.g. exclamation marks after type to trigger major releases
           extra_plugins: conventional-changelog-conventionalcommits
           working_directory: ./code
