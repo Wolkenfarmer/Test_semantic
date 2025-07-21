@@ -24,6 +24,5 @@ jobs:
           dry_run: false # set to true for testing
           # allows e.g. exclamation marks after type to trigger major releases
           extra_plugins: conventional-changelog-conventionalcommits
-          working_directory: ./github
         env: # check releaserc.json for further configuration
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required for permission to tag the repo
