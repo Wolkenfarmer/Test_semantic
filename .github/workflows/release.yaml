@@ -16,13 +16,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # needs entire commit history for tags
           sparse-checkout: '' # no need to check files
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
         with:
           dry_run: true # set to true for testing
           extra_plugins: |
+            # allows e.g. exclamation marks after type to trigger major releases
             conventional-changelog-conventionalcommits
         env: # check releaserc.json for further configuration
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required for permission to tag the repo
