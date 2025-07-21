@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  push
+
+jobs:
+  test:
+    name: Test Terraform
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Schroedinger's Cat
+        run: echo "The cat is both alive and dead until you check it."

@@ -4,14 +4,25 @@ on:
   workflow_run:
     workflows: [CI]
     types: [completed]
-    branches: [semantic]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
   annotate:
-    name: Annotate Commit as Release
+    name: Create Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: '' # no need to check files
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v4
+        with:
+          dry_run: true # set to true for testing
+          # allows e.g. exclamation marks after type to trigger major releases
+          extra_plugins: |
+            conventional-changelog-conventionalcommits
+        env: # check releaserc.json for further configuration
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required for permission to tag the repo
