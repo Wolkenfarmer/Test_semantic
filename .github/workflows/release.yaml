@@ -22,5 +22,7 @@ jobs:
         uses: cycjimmy/semantic-release-action@v4
         with:
           dry_run: true # set to true for testing
+          extra_plugins: |
+            conventional-changelog-conventionalcommits
         env: # check releaserc.json for further configuration
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required for permission to tag the repo
