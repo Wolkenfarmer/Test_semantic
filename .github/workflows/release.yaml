@@ -20,6 +20,7 @@ jobs:
           sparse-checkout: '' # no need to check files
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
+        with:
+          dry_run: false # set to true for testing
         env: # check releaserc.json for further configuration
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required for permission to tag the repo
-          dry_run: true
