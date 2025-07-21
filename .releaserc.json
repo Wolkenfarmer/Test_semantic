@@ -10,8 +10,7 @@
         "releaseRules": [
           { "type": "patch", "release": "patch" },
           { "type": "minor", "release": "minor" },
-          { "type": "major", "release": "major" },
-          { "type": "*!", "release": "major" }
+          { "type": "major", "release": "major" }
         ]
       }
     ],
