@@ -12,10 +12,7 @@
           { "type": "major", "release": "major" },
           { "type": "breaking change", "release": "major" },
           { "type": "BREAKING CHANGE", "release": "major" }
-        ],
-        "parserOpts": {
-          "headerPattern": "^(?<type>\\w+(?: \\w+)*)(?:\\((?<scope>.*)\\))?!?: (?<subject>.*)$"
-        }
+        ]
       }
     ],
     "@semantic-release/git"
