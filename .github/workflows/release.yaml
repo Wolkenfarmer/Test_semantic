@@ -20,6 +20,5 @@ jobs:
         with:
           dry_run: true # set to true for testing
           # allows e.g. exclamation marks after type to trigger major releases
-          extra_plugins: conventional-changelog-conventionalcommits
           working_directory: .github/
         # check releaserc.json for further configuration
