@@ -1,29 +1,25 @@
 name: Release
 
 on:
-  workflow_run:
-    workflows: [CI]
-    types: [completed]
-    branches: [main]
   workflow_dispatch:
 
 jobs:
   release:
     name: Create Semantic Release
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # Required for permission to tag the repo
     steps:
       - uses: actions/checkout@v4
         with:
           sparse-checkout: '.github/.releaserc.yaml' # no need to check other files
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required for permission to tag the repo
         with:
-          dry_run: false # set to true for testing
+          dry_run: true # set to true for testing
           # allows e.g. exclamation marks after type to trigger major releases
           extra_plugins: conventional-changelog-conventionalcommits
           working_directory: .github/
-        env: # check releaserc.json for further configuration
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required for permission to tag the repo
+        # check releaserc.json for further configuration

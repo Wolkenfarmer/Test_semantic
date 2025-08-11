@@ -1,7 +1,6 @@
 name: CI2
 
 on:
-  push:
   workflow_dispatch:
 
 jobs:
