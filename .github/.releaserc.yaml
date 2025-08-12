@@ -7,23 +7,31 @@ plugins:
         - {type: patch, release: patch}
         - {type: minor, release: minor}
         - {type: major, release: major}
+        - {type: feat, release: minor}
+        - {type: fix, release: patch}
         - {type: perf, release: patch}
-        - {type: revert, release: false}
+        - {type: docs, release: no-release}
+        - {type: test, release: patch}
+        - {type: style, release: patch}
+        - {type: revert, release: patch}
+        - {type: build, release: no-release}
+        - {type: ci, release: no-release}
+        - {type: chore, release: patch}
   - - '@semantic-release/release-notes-generator'
     - preset: 'conventionalcommits'
       presetConfig:
         types:
-          - {type: feat, section: '🚀 Features'}
-          - {type: fix, section: '🐛 Bug Fixes'}
-          - {type: perf, section: '⚡ Performance'}
-          - {type: refactor, section: '🚜 Refactor'}
-          - {type: docs, section: '📚 Documentation'}
-          - {type: test, section: '🧪 Testing'}
-          - {type: style, section: '🎨 Styling'}
-          - {type: revert, section: '◀️ Revert'}
-          - {type: build, section: '🏗️ Build'}
-          - {type: ci, section: '🔄 CI'}
-          - {type: chore, section: '🧹 Chore'}
+          - {type: feat, section: '🚀 Features', hidden: false}
+          - {type: fix, section: '🐛 Bug Fixes', hidden: false}
+          - {type: perf, section: '⚡ Performance', hidden: false}
+          - {type: refactor, section: '🚜 Refactor', hidden: false}
+          - {type: docs, section: '📚 Documentation', hidden: false}
+          - {type: test, section: '🧪 Testing', hidden: false}
+          - {type: style, section: '🎨 Styling', hidden: false}
+          - {type: revert, section: '◀️ Revert', hidden: false}
+          - {type: build, section: '🏗️ Build', hidden: false}
+          - {type: ci, section: '🔄 CI', hidden: false}
+          - {type: chore, section: '🧹 Chore', hidden: false}
 #        groupBy: type
         commitGroupsSort: ['feat', 'fix', 'perf', 'refactor', 'docs', 'test', 'style', 'revert', 'build', 'ci', 'chore']
   - '@semantic-release/git'
