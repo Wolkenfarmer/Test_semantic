@@ -2,14 +2,14 @@ branches:
   - main
 plugins:
   - - '@semantic-release/commit-analyzer'
-    - preset: 'conventional-changelog-conventionalcommits'
+    - preset: 'conventionalcommits'
       releaseRules:
         - {type: patch, release: patch}
         - {type: minor, release: minor}
         - {type: major, release: major}
         - {type: perf, release: patch}
   - - '@semantic-release/release-notes-generator'
-    - preset: 'conventional-changelog-conventionalcommits'
+    - preset: 'conventionalcommits'
       writerOpts:
         commitsSort: ['subject', 'scope']
 #        groupBy: type
