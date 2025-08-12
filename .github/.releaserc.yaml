@@ -32,6 +32,5 @@ plugins:
           - {type: build, section: '🏗️ Build', hidden: false}
           - {type: ci, section: '🔄 CI', hidden: false}
           - {type: chore, section: '🧹 Chore', hidden: false}
-#        groupBy: type
         commitGroupsSort: ['feat', 'fix', 'perf', 'refactor', 'docs', 'test', 'style', 'revert', 'build', 'ci', 'chore']
   - '@semantic-release/git'
