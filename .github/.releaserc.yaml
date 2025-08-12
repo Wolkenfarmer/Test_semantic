@@ -10,19 +10,19 @@ plugins:
         - {type: perf, release: patch}
   - - '@semantic-release/release-notes-generator'
     - preset: 'conventionalcommits'
-      writerOpts:
+      presetConfig:
+        types:
+          - {type: feat, section: '🚀 Features'}
+          - {type: fix, section: '🐛 Bug Fixes'}
+          - {type: perf, section: '⚡ Performance'}
+          - {type: refactor, section: '🚜 Refactor'}
+          - {type: docs, section: '📚 Documentation'}
+          - {type: test, section: '🧪 Testing'}
+          - {type: style, section: '🎨 Styling'}
+          - {type: revert, section: '◀️ Revert'}
+          - {type: build, section: '🏗️ Build'}
+          - {type: ci, section: '🔄 CI'}
+          - {type: chore, section: '🧹 Chore'}
 #        groupBy: type
         commitGroupsSort: ['feat', 'fix', 'perf', 'refactor', 'docs', 'test', 'style', 'revert', 'build', 'ci', 'chore']
-        transform:
-          feat: '🚀 Features',
-          fix: '🐛 Bug Fixes',
-          perf: '⚡ Performance',
-          refactor: '🚜 Refactor',
-          docs: '📚 Documentation',
-          test: '🧪 Testing',
-          style: '🎨 Styling',
-          revert: '◀️ Revert',
-          build: '🏗️ Build',
-          ci: '🔄 CI',
-          chore: '🧹 Chore'
   - '@semantic-release/git'
