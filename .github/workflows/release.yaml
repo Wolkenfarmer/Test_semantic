@@ -19,9 +19,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required for permission to tag the repo
         with:
           dry_run: true # set to true for testing
-          extra_plugins: |
-            conventional-changelog-conventionalcommits # for conventional-commits preset
-            '@semantic-release/commit-analyzer'
-            '@semantic-release/git'
+          # allows e.g. exclamation marks after type to trigger major releases
           working_directory: .github/
         # check releaserc.json for further configuration
