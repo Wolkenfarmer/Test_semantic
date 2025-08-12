@@ -10,12 +10,12 @@ plugins:
         - {type: feat, release: minor}
         - {type: fix, release: patch}
         - {type: perf, release: patch}
-        - {type: docs, release: no-release}
+        - {type: docs, release: false}
         - {type: test, release: patch}
         - {type: style, release: patch}
         - {type: revert, release: patch}
-        - {type: build, release: no-release}
-        - {type: ci, release: no-release}
+        - {type: build, release: false}
+        - {type: ci, release: false}
         - {type: chore, release: patch}
   - - '@semantic-release/release-notes-generator'
     - preset: 'conventionalcommits'
