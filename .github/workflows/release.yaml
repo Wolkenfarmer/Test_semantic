@@ -1,6 +1,7 @@
 name: Release
 
 on:
+  push: # for quick test cycles
   workflow_dispatch:
 
 jobs:
@@ -18,8 +19,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required for permission to tag the repo
         with:
+          semantic_version: 21
           dry_run: true # set to true for testing
+          extra_plugins: conventional-changelog-conventionalcommits # for the conventional commits preset,
           # allows e.g. exclamation marks after type to trigger major releases
-          extra_plugins: conventional-changelog-conventionalcommits
           working_directory: .github/
         # check releaserc.json for further configuration
