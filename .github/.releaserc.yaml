@@ -10,8 +10,8 @@ plugins:
         - {type: perf, release: patch}
   - - '@semantic-release/release-notes-generator'
     - preset: conventionalcommits
-#      writerOpts:
-#        commitsSort: ['subject', 'scope']
+      writerOpts:
+        commitsSort: ['subject', 'scope']
 #        groupBy: type
 #        commitGroupsSort: ['feat', 'fix', 'perf', 'refactor', 'docs', 'test', 'style']
 #        headerPartial: |
