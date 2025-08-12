@@ -1,7 +1,6 @@
 name: Release
 
 on:
-  push: # for quick test cycles
   workflow_dispatch:
 
 jobs:
