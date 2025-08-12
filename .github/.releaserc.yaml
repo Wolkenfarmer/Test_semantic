@@ -33,4 +33,9 @@ plugins:
           - {type: ci, section: '🔄 CI', hidden: false}
           - {type: chore, section: '🧹 Chore', hidden: false}
         commitGroupsSort: ['feat', 'fix', 'perf', 'refactor', 'docs', 'test', 'style', 'revert', 'build', 'ci', 'chore']
-  - '@semantic-release/git'
+  - - '@semantic-release/changelog'
+    - changelogFile: 'CHANGELOG.md'
+  - '@semantic-release/github'
+  - - '@semantic-release/git'
+    - assets: ['CHANGELOG.md']
+      message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
