@@ -15,6 +15,7 @@ jobs:
           fetch-depth: '0'
           sparse-checkout: | # no need to check other files
             .github/.releaserc.yaml
+            .github/CHANGELOG.md
             docs/CHANGELOG.md
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
