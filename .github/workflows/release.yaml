@@ -19,7 +19,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required for permission to tag the repo
         with:
-          semantic_version: 21
+          # semantic_version: 21
           dry_run: true # set to true for testing
           extra_plugins: conventional-changelog-conventionalcommits # for the conventional commits preset,
           # allows e.g. exclamation marks after type to trigger major releases
