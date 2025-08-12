@@ -13,34 +13,16 @@ plugins:
       writerOpts:
 #        groupBy: type
         commitGroupsSort: ['feat', 'fix', 'perf', 'refactor', 'docs', 'test', 'style', 'revert', 'build', 'ci', 'chore']
-#        headerPartial: |
-#          {{#if @root.linkCompare~}}
-#            ## [{{version}}]({{compareUrlFormat}}) {{~#if date}}({{date}}){{/if}}
-#          {{~else}}
-#            ## {{version}}{{~#if date}} ({{date}}){{/if}}
-#          {{~/if}}
-#        commitPartial: |
-#          * {{#if subject}}{{subject}}{{else}}{{header}}{{/if}}{{#if hash}} ([{{hash}}]({{commitUrlFormat}})){{/if}}{{#if references}}{{#each references}} [#{{this.issue}}]({{issueUrlFormat}}){{/each}}{{/if}}
-#        transform: |
-#          (commit) => {
-#            const types = {
-#              feat: '🚀 Features',
-#              fix: '🐛 Bug Fixes',
-#              perf: '⚡ Performance',
-#              refactor: '🚜 Refactor',
-#              docs: '📚 Documentation',
-#              test: '🧪 Testing',
-#              style: '🎨 Styling',
-#              revert: '◀️ Revert',
-#              build: '🏗️ Build',
-#              ci: '🔄 CI',
-#              chore: '🧹 Chore'
-#            };
-#
-#            if (commit.type && types[commit.type]) {
-#              commit.type = types[commit.type];
-#            }
-#
-#            return commit;
-#          }
+        transform:
+          feat: '🚀 Features',
+          fix: '🐛 Bug Fixes',
+          perf: '⚡ Performance',
+          refactor: '🚜 Refactor',
+          docs: '📚 Documentation',
+          test: '🧪 Testing',
+          style: '🎨 Styling',
+          revert: '◀️ Revert',
+          build: '🏗️ Build',
+          ci: '🔄 CI',
+          chore: '🧹 Chore'
   - '@semantic-release/git'
