@@ -35,6 +35,7 @@ plugins:
         commitGroupsSort: ['feat', 'fix', 'perf', 'refactor', 'docs', 'test', 'style', 'revert', 'build', 'ci', 'chore']
   - - '@semantic-release/changelog'
     - changelogFile: '../docs/CHANGELOG.md'
+      changelogTitle: "# Changelog\n\nAll notable changes to this project will be documented in this file."
   - '@semantic-release/github'
   - - '@semantic-release/git'
     - assets: ['CHANGELOG.md']
