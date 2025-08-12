@@ -12,6 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          fetch-depth: '0'
           sparse-checkout: | # no need to check other files
             .github/.releaserc.yaml
             docs/CHANGELOG.md
