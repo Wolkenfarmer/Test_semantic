@@ -21,7 +21,7 @@ jobs:
         with:
           semantic_version: 21
           dry_run: true # set to true for testing
-          # extra_plugins: conventional-changelog-conventionalcommits # for the conventional commits preset,
+          extra_plugins: conventional-changelog-conventionalcommits # for the conventional commits preset,
           # allows e.g. exclamation marks after type to trigger major releases
           working_directory: .github/
         # check releaserc.json for further configuration
