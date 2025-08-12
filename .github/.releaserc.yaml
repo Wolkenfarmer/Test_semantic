@@ -8,6 +8,7 @@ plugins:
         - {type: minor, release: minor}
         - {type: major, release: major}
         - {type: perf, release: patch}
+        - {type: revert, release: false}
   - - '@semantic-release/release-notes-generator'
     - preset: 'conventionalcommits'
       presetConfig:
