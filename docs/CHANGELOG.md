@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [5.5.13](https://github.com/Wolkenfarmer/Test_semantic/compare/v5.5.12...v5.5.13) (2025-08-14)
+
+### ◀️ Revert
+
+* **scopeB:** removed alternative changelog position ([8b9660c](https://github.com/Wolkenfarmer/Test_semantic/commit/8b9660cc3d8263e5712d6bdeeb357f4c1c1f9279))
+
 ## [5.5.12](https://github.com/Wolkenfarmer/Test_semantic/compare/v5.5.11...v5.5.12) (2025-08-14)
 
 ### 🐛 Bug Fixes
