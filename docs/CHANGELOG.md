@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [5.5.10](https://github.com/Wolkenfarmer/Test_semantic/compare/v5.5.9...v5.5.10) (2025-08-14)
+
+### 🐛 Bug Fixes
+
+* **scopeA:** fix changelog updates not being commited [#2](https://github.com/Wolkenfarmer/Test_semantic/issues/2) ([158b00a](https://github.com/Wolkenfarmer/Test_semantic/commit/158b00a76348ef89ecf06b22d4064272e9519880))
+
 ## [1.1.2]()(2025-08-11)
 
 ### fix
