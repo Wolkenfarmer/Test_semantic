@@ -29,6 +29,6 @@ jobs:
           extra_plugins: |
             @semantic-release/exec
             conventional-changelog-conventionalcommits # for the conventional commits presets,
-          # allows e.g. exclamation marks after type to trigger major releases
+            # allows e.g. exclamation marks after type to trigger major releases
           working_directory: .github/
         # check releaserc.json for further configuration
