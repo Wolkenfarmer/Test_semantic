@@ -1,5 +1,4 @@
-branches:
-  - main
+branches: [main]
 plugins:
   - - '@semantic-release/commit-analyzer'
     - preset: 'conventionalcommits'
@@ -17,6 +16,7 @@ plugins:
         - {type: build, release: false}
         - {type: ci, release: false}
         - {type: chore, release: patch}
+
   - - '@semantic-release/release-notes-generator'
     - preset: 'conventionalcommits'
       presetConfig:
@@ -33,9 +33,11 @@ plugins:
           - {type: ci, section: '🔄 CI', hidden: false}
           - {type: chore, section: '🧹 Chore', hidden: false}
         commitGroupsSort: ['feat', 'fix', 'perf', 'refactor', 'docs', 'test', 'style', 'revert', 'build', 'ci', 'chore']
+
   - - '@semantic-release/changelog'
     - changelogFile: '../docs/CHANGELOG.md'
       changelogTitle: "# Changelog\n\nAll notable changes to this project will be documented in this file."
+
   - - '@semantic-release/exec'
     - prepareCmd: |
         # The git plugin does not commit the changelog as it is not in a subdirectory of the working directory.
@@ -45,4 +47,5 @@ plugins:
         git add ../docs/CHANGELOG.md
         git commit -m "chore(release): update changelog for ${nextRelease.version} [skip ci]"
         git push origin main
+
   - '@semantic-release/github'
