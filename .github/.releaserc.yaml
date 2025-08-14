@@ -36,7 +36,10 @@ plugins:
   - - '@semantic-release/changelog'
     - changelogFile: '../docs/CHANGELOG.md'
       changelogTitle: "# Changelog\n\nAll notable changes to this project will be documented in this file."
-  - - '@semantic-release/git'
-    - assets: ['**', '../**']
-      message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
+  - - '@semantic-release/exec'
+    - prepareCmd: |
+        git config user.name "semantic-release-bot"
+        git config user.email "semantic-release-bot@martynus.net"
+        git add docs/CHANGELOG.md
+        git commit -m "chore(release): update changelog for ${nextRelease.version} [skip ci]"
   - '@semantic-release/github'
