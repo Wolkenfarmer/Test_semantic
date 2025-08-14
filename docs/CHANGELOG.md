@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [5.5.11](https://github.com/Wolkenfarmer/Test_semantic/compare/v5.5.10...v5.5.11) (2025-08-14)
+
+### 🐛 Bug Fixes
+
+* **scopeA:** fix changelog updates not being commited [#3](https://github.com/Wolkenfarmer/Test_semantic/issues/3) ([d35101a](https://github.com/Wolkenfarmer/Test_semantic/commit/d35101a61197d76b733324f841f4e3ccc136586a))
+* **scopeA:** fix changelog updates not being commited [#4](https://github.com/Wolkenfarmer/Test_semantic/issues/4) ([aad9caf](https://github.com/Wolkenfarmer/Test_semantic/commit/aad9caf199b85620a88324854e2b85648aabbf09))
+* **scopeA:** fix changelog updates not being commited [#5](https://github.com/Wolkenfarmer/Test_semantic/issues/5) ([f8faae8](https://github.com/Wolkenfarmer/Test_semantic/commit/f8faae8136757e61bb60dd77227ffe133c1a4b44))
+* **scopeA:** fix changelog updates not being commited [#6](https://github.com/Wolkenfarmer/Test_semantic/issues/6) ([e0b75c7](https://github.com/Wolkenfarmer/Test_semantic/commit/e0b75c7928b36ed47d716c8de88fc2579218a853))
+
+### ◀️ Revert
+
+* Revert "fix(scopeA): fix changelog updates not being commited [#2](https://github.com/Wolkenfarmer/Test_semantic/issues/2)" ([c0b7bbc](https://github.com/Wolkenfarmer/Test_semantic/commit/c0b7bbc2332c8b5434ecba321005d9f39015273f))
+
 ## [5.5.10](https://github.com/Wolkenfarmer/Test_semantic/compare/v5.5.9...v5.5.10) (2025-08-14)
 
 ### 🐛 Bug Fixes
