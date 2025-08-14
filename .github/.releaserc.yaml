@@ -10,7 +10,6 @@ plugins:
         - {type: perf, release: patch}
         - {type: refactor, release: patch}
         - {type: docs, release: false}
-        - {type: test, release: patch}
         - {type: style, release: patch}
         - {type: revert, release: patch}
         - {type: build, release: false}
