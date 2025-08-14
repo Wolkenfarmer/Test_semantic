@@ -44,5 +44,5 @@ plugins:
         git config user.email "semantic-release-bot@martynus.net"
         git add ../docs/CHANGELOG.md
         git commit -m "chore(release): update changelog for ${nextRelease.version} [skip ci]"
-  - '@semantic-release/git'
+        git push origin main
   - '@semantic-release/github'
