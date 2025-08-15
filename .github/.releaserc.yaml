@@ -2,7 +2,7 @@ branches: [main]
 plugins:
   - - '@semantic-release/commit-analyzer'
     - preset: conventionalcommits
-      presetConfig:
+#      presetConfig:
 #        types:
 #          - {type: patch, section: '🔧 Patches', hidden: false}
 #          - {type: minor, section: '🔖 Minor Changes', hidden: false}
