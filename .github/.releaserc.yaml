@@ -18,6 +18,7 @@ plugins:
           - {type: build, section: '🏗️ Build', hidden: false}
           - {type: ci, section: '🔄 CI', hidden: false}
           - {type: chore, section: '🧹 Chore', hidden: false}
+        bumpStrict: true
       parserOpts: {
 #        headerPattern: '/^(\w*)(?:\((.*)\))?!?: (.*)$/',
 #        breakingHeaderPattern: '/^(\w*)(?:\((.*)\))?!: (.*)$/',
