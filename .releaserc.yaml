@@ -45,7 +45,7 @@ plugins:
 
   - - '@semantic-release/git'
     - assets: [ "docs/CHANGELOG.md" ]
-    - message: "chore(docs): update changelog [skip ci]"
+      message: "chore(docs): update changelog [skip ci]"
 
   - - '@semantic-release/exec'
     - publishCmd: |
