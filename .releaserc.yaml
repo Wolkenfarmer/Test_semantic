@@ -24,17 +24,17 @@ plugins:
         noteKeywords: [ "BREAKING CHANGE", "BREAKING CHANGES", "BREAKING-CHANGE", "BREAKING-CHANGES", "BREAKING" ],
       }
       releaseRules:
-        - { type: patch, release: patch }
-        - { type: minor, release: minor }
-        - { type: major, release: major }
-        - { type: refactor, release: patch }
-        - { type: docs, release: false }
-        - { type: test, release: patch }
-        - { type: style, release: patch }
-        - { type: revert, release: patch }
-        - { type: build, release: false }
-        - { type: ci, release: false }
-        - { type: chore, release: patch }
+#        - { type: patch, release: patch }
+#        - { type: minor, release: minor }
+#        - { type: major, release: major }
+#        - { type: refactor, release: patch }
+#        - { type: docs, release: false }
+#        - { type: test, release: patch }
+#        - { type: style, release: patch }
+#        - { type: revert, release: patch }
+#        - { type: build, release: false }
+#        - { type: ci, release: false }
+#        - { type: chore, release: patch }
 
   - - '@semantic-release/release-notes-generator'
     - preset: conventionalcommits
