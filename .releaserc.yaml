@@ -1,0 +1,54 @@
+branches: [main]
+
+plugins:
+  - - '@semantic-release/commit-analyzer'
+    - preset: conventionalcommits
+      parserOpts: {
+        noteKeywords: [ "BREAKING CHANGE", "BREAKING CHANGES", "BREAKING-CHANGE", "BREAKING-CHANGES", "BREAKING" ],
+      }
+      releaseRules:
+        - { type: patch, release: patch }
+        - { type: minor, release: minor }
+        - { type: major, release: major }
+        - { type: refactor, release: patch }
+        - { type: docs, release: false }
+        - { type: test, release: patch }
+        - { type: style, release: patch }
+        - { type: revert, release: patch }
+        - { type: build, release: false }
+        - { type: ci, release: false }
+        - { type: chore, release: patch }
+
+  - - '@semantic-release/release-notes-generator'
+    - preset: conventionalcommits
+      presetConfig:
+        types:
+          - { type: patch, section: '🔧 Patches', hidden: false }
+          - { type: minor, section: '🔖 Minor Changes', hidden: false }
+          - { type: major, section: '🚨 Major Changes', hidden: false }
+          - {type: feat, section: '🚀 Features', hidden: false}
+          - {type: fix, section: '🐛 Bug Fixes', hidden: false}
+          - {type: perf, section: '⚡ Performance', hidden: false}
+          - {type: refactor, section: '🚜 Refactor', hidden: false}
+          - {type: docs, section: '📚 Documentation', hidden: false}
+          - {type: test, section: '🧪 Testing', hidden: false}
+          - {type: style, section: '🎨 Styling', hidden: false}
+          - {type: revert, section: '◀️ Revert', hidden: false}
+          - {type: build, section: '🏗️ Build', hidden: false}
+          - {type: ci, section: '🔄 CI', hidden: false}
+          - {type: chore, section: '🧹 Chore', hidden: false}
+        commitGroupsSort: ['feat', 'fix', 'perf', 'refactor', 'docs', 'test', 'style', 'revert', 'build', 'ci', 'chore']
+
+  - - '@semantic-release/changelog'
+    - changelogFile: '/docs/CHANGELOG.md'
+      changelogTitle: "# Changelog\n\nAll notable changes to this project will be documented in this file."
+
+  - - '@semantic-release/exec'
+    - publishCmd: |
+        echo "## Release Notes for v${nextRelease.version}" > tmp/release-notes.md
+        echo "" >> tmp/release-notes.md
+        echo "${nextRelease.notes}" | grep -v "## " >> tmp/release-notes.md
+        # goreleaser release --release-notes tmp/release-notes.md --clean
+
+  - '@semantic-release/git'
+  - '@semantic-release/github'
