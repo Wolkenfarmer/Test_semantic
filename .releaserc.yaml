@@ -41,14 +41,22 @@ plugins:
   - - '@semantic-release/release-notes-generator'
 
   - - '@semantic-release/changelog'
-    - changelogFile: 'docs/CHANGELOG.md'
+    - changelogFile: '../docs/CHANGELOG.md'
       changelogTitle: "# Changelog\n\nAll notable changes to this project will be documented in this file."
 
   - - '@semantic-release/git'
-    - assets: [ "docs/CHANGELOG.md" ]
+    - assets: [ "../docs/CHANGELOG.md" ]
       message: "chore(docs): update changelog [skip ci]"
 
   - - '@semantic-release/exec'
+    - prepareCmd: |
+        # The git plugin does not commit the changelog as it is not in a subdirectory of the working directory.
+        # So we need to do it manually.
+        git config user.name "semantic-release-bot"
+        git config user.email "semantic-release-bot@martynus.net"
+        git add ../docs/CHANGELOG.md
+        git commit -m "chore(release): update changelog for ${nextRelease.version} [skip ci]"
+        git push origin main
     - publishCmd: |
         echo "## Release Notes for v${nextRelease.version}" > release-notes.md
         echo "" >> release-notes.md
