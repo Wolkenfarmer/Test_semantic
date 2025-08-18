@@ -26,19 +26,18 @@ plugins:
         noteKeywords: [ "BREAKING CHANGE", "BREAKING CHANGES", "BREAKING-CHANGE", "BREAKING-CHANGES", "BREAKING" ],
 #        revertPattern: '/^(?:Revert|revert:)\s"?([\s\S]+?)"?\s*This reverts commit (\w*)\./i',
       }
-#      releaseRules:
-#        - {type: patch, release: patch}
-#        - {type: minor, release: minor}
-#        - {type: major, release: major}
-#        - {type: perf, release: patch}
-#        - {type: refactor, release: patch}
-#        - {type: docs, release: false}
-#        - {type: test, release: patch}
-#        - {type: style, release: patch}
-#        - {type: revert, release: patch}
-#        - {type: build, release: false}
-#        - {type: ci, release: false}
-#        - {type: chore, release: patch}
+      releaseRules:
+        - {type: patch, release: patch}
+        - {type: minor, release: minor}
+        - {type: major, release: major}
+        - {type: refactor, release: patch}
+        - {type: docs, release: false}
+        - {type: test, release: patch}
+        - {type: style, release: patch}
+        - {type: revert, release: patch}
+        - {type: build, release: false}
+        - {type: ci, release: false}
+        - {type: chore, release: patch}
 
   - - '@semantic-release/release-notes-generator'
     - preset: conventionalcommits
