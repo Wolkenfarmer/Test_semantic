@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [7.0.0](https://github.com/Wolkenfarmer/Test_semantic/compare/v6.0.0...v7.0.0) (2025-08-18)
+
+### ⚠ BREAKING CHANGES
+
+* **scopeB:** test #4
+
+### 🐛 Bug Fixes
+
+* **scopeB:** test [#4](https://github.com/Wolkenfarmer/Test_semantic/issues/4) ([c1a89cb](https://github.com/Wolkenfarmer/Test_semantic/commit/c1a89cb23bfb14f398bc299d544f6039ee8da1e5))
+
 ## [6.0.0](https://github.com/Wolkenfarmer/Test_semantic/compare/v5.5.13...v6.0.0) (2025-08-18)
 
 ### ⚠ BREAKING CHANGES
