@@ -23,7 +23,7 @@ plugins:
       parserOpts: {
         noteKeywords: [ "BREAKING CHANGE", "BREAKING CHANGES", "BREAKING-CHANGE", "BREAKING-CHANGES", "BREAKING" ],
       }
-      releaseRules:
+#      releaseRules:
 #        - { type: patch, release: patch }
 #        - { type: minor, release: minor }
 #        - { type: major, release: major }
