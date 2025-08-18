@@ -40,8 +40,12 @@ plugins:
         commitGroupsSort: ['feat', 'fix', 'perf', 'refactor', 'docs', 'test', 'style', 'revert', 'build', 'ci', 'chore']
 
   - - '@semantic-release/changelog'
-    - changelogFile: '/docs/CHANGELOG.md'
+    - changelogFile: 'docs/CHANGELOG.md'
       changelogTitle: "# Changelog\n\nAll notable changes to this project will be documented in this file."
+
+  - - '@semantic-release/git'
+    - assets: [ "docs/CHANGELOG.md" ]
+    - message: "chore(docs): update changelog [skip ci]"
 
   - - '@semantic-release/exec'
     - publishCmd: |
@@ -50,5 +54,4 @@ plugins:
         echo "${nextRelease.notes}" | grep -v "## " >> tmp/release-notes.md
         # goreleaser release --release-notes tmp/release-notes.md --clean
 
-  - '@semantic-release/git'
   - '@semantic-release/github'
