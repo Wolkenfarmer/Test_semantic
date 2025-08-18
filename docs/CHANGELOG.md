@@ -2,6 +2,68 @@
 
 All notable changes to this project will be documented in this file.
 
+## [6.0.0](https://github.com/Wolkenfarmer/Test_semantic/compare/v5.5.13...v6.0.0) (2025-08-18)
+
+### ⚠ BREAKING CHANGES
+
+* **scopeB:** test #3
+* **scopeB:** test #2
+* **scopeB:** test
+* **scopeB:** fix releaseRules messing with default rules #9
+* **scopeB:** fix releaseRules messing with default rules
+* **scopeB:** did it break?
+* **scopeB:** did it break?
+* **scopeB:** did it break?
+* **scopeB:** fix presets not working #1
+* **scopeB:** fix presets not working
+* **scopeB:** my head now turns 180 degree!
+* **scopeB:** does this trigger a major version?
+* **scopeB:** does this trigger a major version?
+
+### 🔧 Patches
+
+* **scopeB:** fix releaseRules messing with default rules ([060be91](https://github.com/Wolkenfarmer/Test_semantic/commit/060be910289b64c37451c863c27dcdfd687b5fd6))
+* **scopeB:** fix releaseRules messing with default rules [#1](https://github.com/Wolkenfarmer/Test_semantic/issues/1) ([43e5b72](https://github.com/Wolkenfarmer/Test_semantic/commit/43e5b72cef58429ee85d134cb748f3f1d93beb8c))
+* **scopeB:** fix releaseRules messing with default rules [#2](https://github.com/Wolkenfarmer/Test_semantic/issues/2) ([72546e2](https://github.com/Wolkenfarmer/Test_semantic/commit/72546e24386aededb351ed0b6778540b7da691aa))
+
+### 🐛 Bug Fixes
+
+* **scopeB:** does this trigger a major version? ([699c8d7](https://github.com/Wolkenfarmer/Test_semantic/commit/699c8d7dd44e5b7b5a7cc43b9856eec98f2cfc22))
+* **scopeB:** does this trigger a major version? ([e7dc289](https://github.com/Wolkenfarmer/Test_semantic/commit/e7dc2894554d5c8401563f33c76b475b504152cb))
+* **scopeB:** fix presets not working ([d684a0a](https://github.com/Wolkenfarmer/Test_semantic/commit/d684a0aa1ba32a4e366f356ce3e9887361d7d8cc))
+* **scopeB:** fix presets not working ([47a8e3d](https://github.com/Wolkenfarmer/Test_semantic/commit/47a8e3d0cd43e92b52de320ab7ba56f59f8dbf20))
+* **scopeB:** fix presets not working [#1](https://github.com/Wolkenfarmer/Test_semantic/issues/1) ([4185782](https://github.com/Wolkenfarmer/Test_semantic/commit/4185782e738bff367cac86204839ca60bfd10dd0))
+* **scopeB:** fix presets not working [#1](https://github.com/Wolkenfarmer/Test_semantic/issues/1) ([f1e99e3](https://github.com/Wolkenfarmer/Test_semantic/commit/f1e99e3d7a576aacc4e7dd0ce3a3b10974975b7d))
+* **scopeB:** fix presets not working [#1](https://github.com/Wolkenfarmer/Test_semantic/issues/1) ([657f18f](https://github.com/Wolkenfarmer/Test_semantic/commit/657f18f4fdb45e9e561d85365a63cb2c47fbfad6))
+* **scopeB:** refactor added to releaseRules ([4a44109](https://github.com/Wolkenfarmer/Test_semantic/commit/4a441094b03e644066adc37bed6714ef3bd4e16e))
+* **scopeB:** test [#3](https://github.com/Wolkenfarmer/Test_semantic/issues/3) ([7a298c0](https://github.com/Wolkenfarmer/Test_semantic/commit/7a298c030b211da52498c729d5db913236b138e2))
+
+### ⚡ Performance
+
+* **scopeB:** fix releaseRules messing with default rules [#7](https://github.com/Wolkenfarmer/Test_semantic/issues/7) ([96e5d77](https://github.com/Wolkenfarmer/Test_semantic/commit/96e5d7708872f9416f6d04a12ed18e13cc02039b))
+* **scopeB:** fix releaseRules messing with default rules [#9](https://github.com/Wolkenfarmer/Test_semantic/issues/9) ([6231976](https://github.com/Wolkenfarmer/Test_semantic/commit/62319761389229ce5357715e24e99612db2684fa))
+
+### 🚜 Refactor
+
+* **scopeB:** tweaks ([e5dccd2](https://github.com/Wolkenfarmer/Test_semantic/commit/e5dccd2649b077a30eede0edef6608758dc039d4))
+
+### 📚 Documentation
+
+* **scopeB:** fix releaseRules messing with default rules [#8](https://github.com/Wolkenfarmer/Test_semantic/issues/8) ([c6e62a1](https://github.com/Wolkenfarmer/Test_semantic/commit/c6e62a1e96c2e3c6a7f42d8b959a7841a90ddda7))
+
+### 🧪 Testing
+
+* **scopeB:** does this trigger a major version? ([818fa51](https://github.com/Wolkenfarmer/Test_semantic/commit/818fa511e1ffed2c63dd87f8febec0f843b17b27))
+* **scopeB:** fix presets not working [#4](https://github.com/Wolkenfarmer/Test_semantic/issues/4) ([1e92c06](https://github.com/Wolkenfarmer/Test_semantic/commit/1e92c06649801c9178be550505d25e45f770609c))
+* **scopeB:** fix presets not working [#5](https://github.com/Wolkenfarmer/Test_semantic/issues/5) ([9fe3160](https://github.com/Wolkenfarmer/Test_semantic/commit/9fe3160f963590c5b0cabb288ae15583d7c87c27))
+* **scopeB:** fix presets not working [#7](https://github.com/Wolkenfarmer/Test_semantic/issues/7) ([f9c0cfb](https://github.com/Wolkenfarmer/Test_semantic/commit/f9c0cfb3d52053336950fe481d9a9743391f0dc0))
+* **scopeB:** fix releaseRules messing with default rules [#3](https://github.com/Wolkenfarmer/Test_semantic/issues/3) ([ea5c999](https://github.com/Wolkenfarmer/Test_semantic/commit/ea5c99939069878eb962eee92c80e60aa36a4a04))
+* **scopeB:** fix releaseRules messing with default rules [#4](https://github.com/Wolkenfarmer/Test_semantic/issues/4) ([f07e74c](https://github.com/Wolkenfarmer/Test_semantic/commit/f07e74c928073e7b56f9cd0e90642f709dd0ab62))
+* **scopeB:** fix releaseRules messing with default rules [#5](https://github.com/Wolkenfarmer/Test_semantic/issues/5) ([2618e25](https://github.com/Wolkenfarmer/Test_semantic/commit/2618e25ec53cac525d81ac2512d4095a98ba9567))
+* **scopeB:** fix releaseRules messing with default rules [#6](https://github.com/Wolkenfarmer/Test_semantic/issues/6) ([49b5940](https://github.com/Wolkenfarmer/Test_semantic/commit/49b594011c1f668ea16c50f1aef7525ef2f608e4))
+* **scopeB:** test ([47a4dff](https://github.com/Wolkenfarmer/Test_semantic/commit/47a4dff38581ca12075dcbb2deb8f121b9a34f6c))
+* **scopeB:** test [#2](https://github.com/Wolkenfarmer/Test_semantic/issues/2) ([cae41c7](https://github.com/Wolkenfarmer/Test_semantic/commit/cae41c77fb16404f73693512c2dc31c510764fbd))
+
 ## [5.5.13](https://github.com/Wolkenfarmer/Test_semantic/compare/v5.5.12...v5.5.13) (2025-08-14)
 
 ### ◀️ Revert
