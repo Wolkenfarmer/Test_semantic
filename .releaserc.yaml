@@ -49,9 +49,9 @@ plugins:
 
   - - '@semantic-release/exec'
     - publishCmd: |
-        echo "## Release Notes for v${nextRelease.version}" > tmp/release-notes.md
-        echo "" >> tmp/release-notes.md
-        echo "${nextRelease.notes}" | grep -v "## " >> tmp/release-notes.md
-        # goreleaser release --release-notes tmp/release-notes.md --clean
+        echo "## Release Notes for v${nextRelease.version}" > release-notes.md
+        echo "" >> release-notes.md
+        echo "${nextRelease.notes}" | grep -v "## " >> release-notes.md
+        # goreleaser release --release-notes release-notes.md --clean
 
   - '@semantic-release/github'
