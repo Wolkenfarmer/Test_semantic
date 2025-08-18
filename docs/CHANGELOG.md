@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [8.0.0](https://github.com/Wolkenfarmer/Test_semantic/compare/v7.0.0...v8.0.0) (2025-08-18)
+
+### ⚠ BREAKING CHANGES
+
+* **scopeB:** Node >= 18 is required
+
+### 🚀 Features
+
+* **scopeB:** drop node 18 support ([04082d6](https://github.com/Wolkenfarmer/Test_semantic/commit/04082d63c31f5ac107535bad194b5a6e251d79c4))
+
 ## [7.0.0](https://github.com/Wolkenfarmer/Test_semantic/compare/v6.0.0...v7.0.0) (2025-08-18)
 
 ### ⚠ BREAKING CHANGES
