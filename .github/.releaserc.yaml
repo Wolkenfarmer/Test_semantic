@@ -57,7 +57,7 @@ plugins:
         git add ../docs/CHANGELOG.md
         git commit -m "chore(release): update changelog for ${nextRelease.version} [skip ci]"
         git push origin main
-    - publishCmd: |
+      publishCmd: |
         echo "## Release Notes for v${nextRelease.version}" > release-notes.md
         echo "" >> release-notes.md
         echo "${nextRelease.notes}" | grep -v "## " >> release-notes.md
