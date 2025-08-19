@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [9.0.1](https://github.com/Wolkenfarmer/Test_semantic/compare/v9.0.0...v9.0.1) (2025-08-19)
+
+### ◀️ Revert
+
+* remove ci2 ([abf6eae](https://github.com/Wolkenfarmer/Test_semantic/commit/abf6eae71a8ba7a53447736771599f1bacb5ab12))
+
 ## [9.0.0](https://github.com/Wolkenfarmer/Test_semantic/compare/v8.0.0...v9.0.0) (2025-08-19)
 
 ### ⚠ BREAKING CHANGES
