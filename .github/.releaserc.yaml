@@ -7,6 +7,7 @@ presetConfig:
     - { type: minor, section: '🔖 Minor Changes', hidden: false }
     - { type: patch, section: '🔧 Patches', hidden: false }
     - { type: feat, section: '🚀 Features', hidden: false }
+    - { type: feature, section: '🚀 Features', hidden: false }
     - { type: fix, section: '🐛 Bug Fixes', hidden: false }
     - { type: perf, section: '⚡ Performance', hidden: false }
     - { type: refactor, section: '🚜 Refactor', hidden: false }
