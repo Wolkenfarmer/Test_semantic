@@ -2,7 +2,7 @@ branches: [ main ]
 
 preset: conventionalcommits
 presetConfig:
-  types:
+  types: # also indirectly defines the order of the sections in the changelog
     - { type: major, section: '🚨 Major Changes', hidden: false }
     - { type: minor, section: '🔖 Minor Changes', hidden: false }
     - { type: patch, section: '🔧 Patches', hidden: false }
@@ -17,7 +17,6 @@ presetConfig:
     - { type: build, section: '🏗️ Build', hidden: false }
     - { type: ci, section: '🔄 CI', hidden: false }
     - { type: chore, section: '🧹 Chore', hidden: false }
-#  commitGroupsSort: [ 'feat', 'fix', 'perf', 'refactor', 'docs', 'test', 'style', 'revert', 'build', 'ci', 'chore' ]
 
 plugins:
   - - '@semantic-release/commit-analyzer'
