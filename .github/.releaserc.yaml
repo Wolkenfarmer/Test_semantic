@@ -29,6 +29,10 @@ plugins:
         - { type: patch, release: patch }
         - { type: minor, release: minor }
         - { type: major, release: major }
+        - { type: feat, release: minor }
+        - { type: feature, release: minor }
+        - { type: fix, release: patch }
+        - { type: perf, release: minor }
         - { type: refactor, release: patch }
         - { type: docs, release: false }
         - { type: test, release: patch }
