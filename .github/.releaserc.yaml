@@ -26,9 +26,9 @@ plugins:
     }
       releaseRules:
         - { breaking: true, release: major }
-        - { type: patch, release: patch }
-        - { type: minor, release: minor }
         - { type: major, release: major }
+        - { type: minor, release: minor }
+        - { type: patch, release: patch }
         - { type: feat, release: minor }
         - { type: feature, release: minor }
         - { type: fix, release: patch }
