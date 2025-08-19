@@ -9,8 +9,8 @@ presetConfig:
     - { type: feat, section: '🚀 Features', hidden: false }
     - { type: feature, section: '🚀 Features', hidden: false }
     - { type: fix, section: '🐛 Bug Fixes', hidden: false }
-    #    - { type: perf, section: '⚡ Performance', hidden: false }
-    #    - { type: performance, section: '⚡ Performance', hidden: false }
+    - { type: perf, section: '⚡ Performance', hidden: false }
+    - { type: performance, section: '⚡ Performance', hidden: false }
     - { type: refactor, section: '🚜 Refactor', hidden: false }
     - { type: docs, section: '📚 Documentation', hidden: false }
     - { type: test, section: '🧪 Testing', hidden: false }
@@ -34,8 +34,8 @@ plugins:
         - { type: feat, release: minor }
         - { type: feature, release: minor }
         - { type: fix, release: patch }
-        #        - { type: perf, release: minor }
-        #        - { type: performance, release: patch }
+        - { type: perf, release: patch }
+        - { type: performance, release: patch }
         - { type: refactor, release: patch }
         - { type: docs, release: false }
         - { type: test, release: patch }
