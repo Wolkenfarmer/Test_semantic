@@ -2,7 +2,7 @@ branches: [ main ]
 
 preset: conventionalcommits
 presetConfig:
-  types: # also indirectly defines the order of the sections in the changelog
+  types:
     - { type: major, section: '🚨 Major Changes', hidden: false }
     - { type: minor, section: '🔖 Minor Changes', hidden: false }
     - { type: patch, section: '🔧 Patches', hidden: false }
@@ -19,6 +19,7 @@ presetConfig:
     - { type: build, section: '🏗️ Build', hidden: false }
     - { type: ci, section: '🔄 CI', hidden: false }
     - { type: chore, section: '🧹 Chore', hidden: false }
+    # also indirectly defines the order of the sections in the changelog
     # same section names are automatically grouped together in the changelog
 
 plugins:
@@ -45,29 +46,29 @@ plugins:
         - { type: ci, release: false }
         - { type: chore, release: patch }
 
-  - - '@semantic-release/release-notes-generator'
+        - - '@semantic-release/release-notes-generator'
 
-  - - '@semantic-release/changelog'
-    - changelogFile: '../docs/CHANGELOG.md'
-      changelogTitle: "# Changelog\n\nAll notable changes to this project will be documented in this file."
+        - - '@semantic-release/changelog'
+          - changelogFile: '../docs/CHANGELOG.md'
+            changelogTitle: "# Changelog\n\nAll notable changes to this project will be documented in this file."
 
-  - - '@semantic-release/git'
-    - assets: [ "../docs/CHANGELOG.md" ]
-      message: "chore(docs): update changelog [skip ci]"
+        - - '@semantic-release/git'
+          - assets: [ "../docs/CHANGELOG.md" ]
+            message: "chore(docs): update changelog [skip ci]"
 
-  - - '@semantic-release/exec'
-    - prepareCmd: |
-        # The git plugin does not commit the changelog as it is not in a subdirectory of the working directory.
-        # So we need to do it manually.
-        git config user.name "semantic-release-bot"
-        git config user.email "semantic-release-bot@martynus.net"
-        git add ../docs/CHANGELOG.md
-        git commit -m "chore(release): update changelog for ${nextRelease.version} [skip ci]"
-        git push origin main
-      publishCmd: |
-        echo "## Release Notes for v${nextRelease.version}" > release-notes.md
-        echo "" >> release-notes.md
-        echo "${nextRelease.notes}" | grep -v "## " >> release-notes.md
-        # goreleaser release --release-notes release-notes.md --clean
+        - - '@semantic-release/exec'
+          - prepareCmd: |
+              # The git plugin does not commit the changelog as it is not in a subdirectory of the working directory.
+              # So we need to do it manually.
+              git config user.name "semantic-release-bot"
+              git config user.email "semantic-release-bot@martynus.net"
+              git add ../docs/CHANGELOG.md
+              git commit -m "chore(release): update changelog for ${nextRelease.version} [skip ci]"
+              git push origin main
+            publishCmd: |
+              echo "## Release Notes for v${nextRelease.version}" > release-notes.md
+              echo "" >> release-notes.md
+              echo "${nextRelease.notes}" | grep -v "## " >> release-notes.md
+              # goreleaser release --release-notes release-notes.md --clean
 
-  - '@semantic-release/github'
+        - '@semantic-release/github'
