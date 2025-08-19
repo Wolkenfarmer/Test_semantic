@@ -2,6 +2,45 @@
 
 All notable changes to this project will be documented in this file.
 
+## [9.0.0](https://github.com/Wolkenfarmer/Test_semantic/compare/v8.0.0...v9.0.0) (2025-08-19)
+
+### ⚠ BREAKING CHANGES
+
+* **scopeB:** jipiii!! :D
+* **scopeB:** try new solution to breaking problem
+* **scopeB:** test #1
+* **scopeB:** test #1
+* **scopeB:** test
+
+### 🚀 Features
+
+* **scopeB:** jipiii!! :D ([5958b3a](https://github.com/Wolkenfarmer/Test_semantic/commit/5958b3aa582c0b908c971f6677dd19f9312aa073))
+
+### 🐛 Bug Fixes
+
+* **scopeB:** move .releaserc back to .github [#4](https://github.com/Wolkenfarmer/Test_semantic/issues/4) ([283eeef](https://github.com/Wolkenfarmer/Test_semantic/commit/283eeef24d2363171631af2b8744921c83b17f71))
+
+### 🧪 Testing
+
+* **scopeB:** move .releaserc back to .github [#2](https://github.com/Wolkenfarmer/Test_semantic/issues/2) ([029c3b9](https://github.com/Wolkenfarmer/Test_semantic/commit/029c3b93b0ab12048b33c802d937eefd32934ba0))
+* **scopeB:** test ([d8047fa](https://github.com/Wolkenfarmer/Test_semantic/commit/d8047faa72f0b60bfbbc5e98f45eebb677db0fb1))
+* **scopeB:** test [#1](https://github.com/Wolkenfarmer/Test_semantic/issues/1) ([169d793](https://github.com/Wolkenfarmer/Test_semantic/commit/169d79325f9f18db4dfa04666eb365f2cd3664b7))
+* **scopeB:** test [#1](https://github.com/Wolkenfarmer/Test_semantic/issues/1) ([bc7afbc](https://github.com/Wolkenfarmer/Test_semantic/commit/bc7afbc7ef2c07697944d964e2e15c06ed8f6d00))
+* **scopeB:** test [#3](https://github.com/Wolkenfarmer/Test_semantic/issues/3) ([36d0ebf](https://github.com/Wolkenfarmer/Test_semantic/commit/36d0ebf0eecd6e0cc691eb9e540af761a8185804))
+* **scopeB:** try new solution to breaking problem ([5fe9285](https://github.com/Wolkenfarmer/Test_semantic/commit/5fe9285a2faeb894f3e6ba8a5e984c97ff7c302b))
+* **scopeB:** try new solution to breaking problem [#2](https://github.com/Wolkenfarmer/Test_semantic/issues/2) ([f9aedec](https://github.com/Wolkenfarmer/Test_semantic/commit/f9aedec27f952581461457135bf81fd6191596a7))
+* **scopeB:** try new solution to breaking problem [#3](https://github.com/Wolkenfarmer/Test_semantic/issues/3) ([1238d53](https://github.com/Wolkenfarmer/Test_semantic/commit/1238d5310efddb5b1e52bfa4c68f1d03b6604d57))
+
+### 🎨 Styling
+
+* reformat code ([113b22e](https://github.com/Wolkenfarmer/Test_semantic/commit/113b22ed0e2299ccdc04bb768ffd2bbad9d5cc70))
+
+### ◀️ Revert
+
+* **scopeB:** move .releaserc back to .github ([29d2142](https://github.com/Wolkenfarmer/Test_semantic/commit/29d2142e04b9aab4bd616977c695e35661368b49))
+* **scopeB:** move .releaserc back to .github [#1](https://github.com/Wolkenfarmer/Test_semantic/issues/1) ([676a2fd](https://github.com/Wolkenfarmer/Test_semantic/commit/676a2fdd1d61ab6136a7a4906c73f70a18d2b9e7))
+* **scopeB:** move .releaserc back to .github [#2](https://github.com/Wolkenfarmer/Test_semantic/issues/2) ([89031c6](https://github.com/Wolkenfarmer/Test_semantic/commit/89031c6790ff0893fb69077f6556612e427cdd3f))
+
 ## [8.0.0](https://github.com/Wolkenfarmer/Test_semantic/compare/v7.0.0...v8.0.0) (2025-08-18)
 
 ### ⚠ BREAKING CHANGES
