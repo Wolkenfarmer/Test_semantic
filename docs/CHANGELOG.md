@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [10.0.2](https://github.com/Wolkenfarmer/Test_semantic/compare/v10.0.1...v10.0.2) (2025-08-20)
+
+### 🐛 Bug Fixes
+
+* back to normal ^^ ([821f0e4](https://github.com/Wolkenfarmer/Test_semantic/commit/821f0e42c3d7afa05560fa2a5f0951a8b7fb0eb3))
+
+### ◀️ Revert
+
+* Revert "chore(docs): update changelog [skip ci]" ([46a3e11](https://github.com/Wolkenfarmer/Test_semantic/commit/46a3e11d72a1623709a9f145d0f1324b7f77dd99))
+* Revert "test: can Changelogs be generated from scratch? [#1](https://github.com/Wolkenfarmer/Test_semantic/issues/1)" ([b537af9](https://github.com/Wolkenfarmer/Test_semantic/commit/b537af95f9028e25f2edddcdea47642af16a0d05))
+* Revert "test: can Changelogs be generated from scratch? [#2](https://github.com/Wolkenfarmer/Test_semantic/issues/2)" ([fdb1d19](https://github.com/Wolkenfarmer/Test_semantic/commit/fdb1d19dabd6aafd3c66b8142cd0472b646dc930))
+
+### 🧹 Chore
+
+* update checkout action to v5 ([8df0151](https://github.com/Wolkenfarmer/Test_semantic/commit/8df0151b7b684ea10e5e3e7714f0deb70a090398))
+
 ## [9.0.1](https://github.com/Wolkenfarmer/Test_semantic/compare/v9.0.0...v9.0.1) (2025-08-19)
 
 ### ◀️ Revert
