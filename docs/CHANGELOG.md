@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [10.0.3](https://github.com/Wolkenfarmer/Test_semantic/compare/v10.0.2...v10.0.3) (2025-08-20)
+
+### ◀️ Revert
+
+* Revert "chore: update checkout action to v5" ([e1b5830](https://github.com/Wolkenfarmer/Test_semantic/commit/e1b583046e055dbad9e23bf01c916e97db71f87e))
+
 ## [10.0.2](https://github.com/Wolkenfarmer/Test_semantic/compare/v10.0.1...v10.0.2) (2025-08-20)
 
 ### 🐛 Bug Fixes
