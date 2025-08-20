@@ -49,11 +49,11 @@ plugins:
   - - '@semantic-release/release-notes-generator'
 
   - - '@semantic-release/changelog'
-    - changelogFile: 'CHANGELOG.md'
+    - changelogFile: 'docs/CHANGELOG.md'
       changelogTitle: "# Changelog\n\nAll notable changes to this project will be documented in this file."
 
   - - '@semantic-release/git'
-    - assets: [ "CHANGELOG.md" ]
+    - assets: [ "docs/CHANGELOG.md" ]
       message: "chore(docs): update changelog [skip ci]"
 
   - - '@semantic-release/exec'
