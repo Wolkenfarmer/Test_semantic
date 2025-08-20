@@ -16,8 +16,7 @@ jobs:
         with:
           fetch-depth: '0'
           sparse-checkout: | # no need to check other files
-            .github/.releaserc.yaml
-            .github/CHANGELOG.md
+            .releaserc.yaml
             docs/CHANGELOG.md
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
@@ -25,10 +24,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required for permission to tag the repo
         with:
           semantic_version: 24
-          dry_run: ${{ github.event_name != 'workflow_dispatch' }} # set to true for testing
+          dry_run: false # set to true for testing
           extra_plugins: |
             @semantic-release/exec
             conventional-changelog-conventionalcommits # for the conventional commits presets,
             # allows e.g. exclamation marks after type to trigger major releases
-          working_directory: .github/
         # check releaserc.json for further configuration
