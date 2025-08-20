@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [10.0.4](https://github.com/Wolkenfarmer/Test_semantic/compare/v10.0.3...v10.0.4) (2025-08-20)
+
+### 🧪 Testing
+
+* set up as k8s_cluster ([3002aea](https://github.com/Wolkenfarmer/Test_semantic/commit/3002aea60a1a223a17d0098da9d20c5b9c16a35f))
+
 ## [10.0.3](https://github.com/Wolkenfarmer/Test_semantic/compare/v10.0.2...v10.0.3) (2025-08-20)
 
 ### ◀️ Revert
